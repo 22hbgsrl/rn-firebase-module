@@ -4,7 +4,7 @@
   "description": "22hbg React Native firebase module",
   "scripts": {
     "build": "yarn tsc",
-    "prepare" : "yarn build",
+    "prepare" : "yarn build"
   },
   "repository": {
     "type": "git",

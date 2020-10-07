@@ -1,7 +1,7 @@
 # Npm
 node_modules/
 yarn.lock
-yarn.error
+yarn-error.log
 package-lock.json
 
 # Typescript
