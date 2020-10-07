@@ -4,7 +4,9 @@ Modulo firebase da usare nelle applicazioni.
 
 ## Installation
 
-Scaricare la repository nella cartella src del progetto con `git clone`.
+```sh
+yarn add @22hbg/rn-firebase-module
+```
 
 ### Additional steps:
 
