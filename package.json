@@ -4,7 +4,7 @@
   "description": "22hbg React Native firebase module",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "yarn tsc"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,19 @@
   "bugs": {
     "url": "https://github.com/22hbgsrl/rn-firebase-module/issues"
   },
-  "homepage": "https://github.com/22hbgsrl/rn-firebase-module#readme"
+  "homepage": "https://github.com/22hbgsrl/rn-firebase-module#readme",
+  "dependencies": {
+    "@react-native-firebase/analytics": "^7.6.7",
+    "@react-native-firebase/app": "^8.4.5",
+    "@react-native-firebase/crashlytics": "^8.4.9",
+    "@react-native-firebase/in-app-messaging": "^7.5.6",
+    "@react-native-firebase/messaging": "^7.9.0",
+    "@react-native-firebase/remote-config": "^9.0.10"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^2.0.0",
+    "eslint": "^7.10.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  }
 }
