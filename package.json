@@ -1,6 +1,6 @@
 {
   "name": "@22hbg/rn-firebase-module",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "22hbg React Native firebase module",
   "main": "index.ts",
   "scripts": {
@@ -20,7 +20,7 @@
     "url": "https://github.com/22hbgsrl/rn-firebase-module/issues"
   },
   "homepage": "https://github.com/22hbgsrl/rn-firebase-module#readme",
-  "dependencies": {
+  "peerDependencies": {
     "@react-native-firebase/analytics": "^7.6.7",
     "@react-native-firebase/app": "^8.4.5",
     "@react-native-firebase/crashlytics": "^8.4.9",

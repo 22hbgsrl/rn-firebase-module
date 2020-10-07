@@ -6,6 +6,8 @@ Modulo firebase da usare nelle applicazioni.
 
 ```sh
 yarn add @22hbg/rn-firebase-module
+
+cd ios/ && pod install
 ```
 
 ### Additional steps:
