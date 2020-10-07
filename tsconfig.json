@@ -21,6 +21,6 @@
         "strict": true
     },
     "types": ["react", "react-native"],
-    "include": ["src", "index.ts"],
+    "include": ["src", "src/index.ts"],
     "exclude": ["android", "ios", "build", "node_modules", "tests"]
 }
