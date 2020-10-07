@@ -1,11 +1,11 @@
 # Firebase library
 
-Modulo firebase da usare nelle applicazioni.
+Firebase module with firebase core, remote config, analytics, cloud messaging, crashlitics and in-app messaging
 
 ## Installation
 
 ```sh
-yarn add @22hbg/rn-firebase-module
+yarn add @22hbg/rn-firebase-module @react-native-firebase/analytics @react-native-firebase/app @react-native-firebase/crashlytics @react-native-firebase/in-app-messaging @react-native-firebase/messaging @react-native-firebase/remote-config
 
 cd ios/ && pod install
 ```
@@ -32,8 +32,10 @@ import { initializeRemoteConfig } from '@22hbg/rn-firebase-module'
 
 export default App = () => {
     useEffect(() => {
-        initializeRemoteConfig()
-            .then(() => console.log('success'))
+        initializeRemoteConfig({
+            data: 'value'
+        })
+        .then(() => console.log('success'))
             .catch(() => console.error('error: ', error))
     })
 
@@ -49,6 +51,7 @@ export default App
 import React, { useEffect } from 'react'
 import { View } from 'react-native'
 import { requestNotificationPermission } from '@22hbg/rn-firebase-module'
+import messaging from '@react-native-firebase/messaging'
 
 export default App = () => {
     useEffect(() => {
@@ -58,11 +61,10 @@ export default App = () => {
     const checkUserPermission = async () => {
         const permission = await requestNotificationPermission()
 
-        const enabled = permission === messaging.AuthorizationStatus.AUTHORIZED || 
-                        permission === messaging.AuthorizationStatus.PROVISIONAL
+        const enabled = permission === messaging.AuthorizationStatus.AUTHORIZED || permission === messaging.AuthorizationStatus.PROVISIONAL
 
         if (enabled) {
-            console.log('Authorization status:', permission);
+            console.log('Authorization status:', permission)
         }
     }
 
