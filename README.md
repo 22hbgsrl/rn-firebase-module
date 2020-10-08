@@ -1,6 +1,8 @@
-# Firebase library
+# Firebase module
 
 Firebase module with firebase core, remote config, analytics, cloud messaging, crashlitics and in-app messaging
+
+Dependecy used: [React Native Firebase](https://rnfirebase.io)
 
 ## Installation
 
